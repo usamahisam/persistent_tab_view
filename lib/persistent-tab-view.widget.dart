@@ -122,8 +122,6 @@ class PersistentTabView extends PersistentTabViewBase {
         ) {
     assert(items != null,
         "Items can only be null in case of custom navigation bar style. Please add the items!");
-    assert(assertMidButtonStyles(navBarStyle, items!.length),
-        "NavBar styles 15-18 only accept 3 or 5 PersistentBottomNavBarItem items.");
     assert(items!.length == screens.length,
         "screens and items length should be same. If you are using the onPressed callback function of 'PersistentBottomNavBarItem', enter a dummy screen like Container() in its place in the screens");
     assert(items!.length >= 2 && items.length <= 6,
